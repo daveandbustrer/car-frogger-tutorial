@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bwv27y4fog2gu"]
+
+[ext_resource type="Script" uid="uid://d8yql0jic0qi" path="res://scripts/obj.gd" id="1_lvdea"]
+[ext_resource type="Texture2D" uid="uid://c5iy3tuxd0vaw" path="res://graphics/objects/barrier.png" id="2_2mqxq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nffp0"]
+size = Vector2(16, 8)
+
+[node name="obj" type="StaticBody2D" unique_id=2067137901]
+script = ExtResource("1_lvdea")
+img = ExtResource("2_2mqxq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=856302684]
+shape = SubResource("RectangleShape2D_nffp0")
+debug_color = Color(0.8026594, 0.025140231, 0.99999994, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=370486773]

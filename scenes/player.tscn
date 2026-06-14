@@ -94,12 +94,13 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
-size = Vector2(8, 10)
+size = Vector2(8, 11)
 
 [node name="player" type="CharacterBody2D" unique_id=1662817423]
-scale = Vector2(1.5, 1.5)
+collision_layer = 2
+collision_mask = 13
 script = ExtResource("1_g2els")
-speed = 2
+speed = 100
 
 [node name="char" type="AnimatedSprite2D" parent="." unique_id=330593022]
 sprite_frames = SubResource("SpriteFrames_f1ej7")
@@ -107,5 +108,5 @@ animation = &"down"
 autoplay = "left"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1584574753]
-position = Vector2(0, 1)
+position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_g2els")
